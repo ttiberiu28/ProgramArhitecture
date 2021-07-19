@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">anycpu</Platform>
+    <ProjectGuid>{F52BD38C-5D4F-470A-B41C-432E89B83054}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>ProgramArhitecture</RootNamespace>
+    <AssemblyName>ProgramArhitecture</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|anycpu' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ExternalConsole>true</ExternalConsole>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|anycpu' ">
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ExternalConsole>true</ExternalConsole>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Expressor.cs" />
+    <Compile Include="Pot.cs" />
+    <Compile Include="Boiler.cs" />
+    <Compile Include="Sensor.cs" />
+    <Compile Include="Plate Sensor.cs" />
+    <Compile Include="Water Sensor.cs" />
+    <Compile Include="Delivery Pipe.cs" />
+    <Compile Include="Heater.cs" />
+    <Compile Include="Plate Heater.cs" />
+    <Compile Include="Boiler Heater.cs" />
+    <Compile Include="IndicatorLight.cs" />
+    <Compile Include="FilterReceptacle.cs" />
+    <Compile Include="StartButton.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+</Project>
